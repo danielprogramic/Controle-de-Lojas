@@ -1,0 +1,230 @@
+         
+
+<!-- BEGIN PAGE HEADER-->   
+<div class="row-fluid">
+ <div class="span12">
+   <!-- BEGIN THEME CUSTOMIZER-->
+   <!-- BEGIN PAGE TITLE & BREADCRUMB-->
+   <h3 class="page-title">
+    Perfil
+     <small><!--dados dos usuários--></small>
+   </h3>
+   <ul class="breadcrumb">
+     <li>
+       <a href=""><i class="icon-user"></i></a><span class="divider">&nbsp;</span>
+     </li>
+     <li>
+       <a href="">Perfil</a> <span class="divider">&nbsp;</span>
+     </li>
+     <li><a href="">Incluir Perfil</a><span class="divider-last">&nbsp;</span></li>
+   </ul>
+   <!-- END PAGE TITLE & BREADCRUMB-->
+ </div>
+</div>
+<!-- END PAGE HEADER-->
+<!-- BEGIN ADVANCED TABLE widget-->
+<div class="row-fluid">
+ <div class="span6">
+   <!-- BEGIN EXAMPLE TABLE widget-->
+   <!-- BEGIN SAMPLE TABLE widget-->
+   <div class="widget">
+     <div class="widget-title">
+       <h4><i class="icon-plus icon-white"></i> Incluir Perfil</h4>
+    
+
+
+
+     </div>
+     <div class="widget-body">
+
+
+       <form ng-submit="checkLogin()" class="form-horizontal">
+         <div class="form-wizard">
+
+
+           <div class="tab-content">
+             <br>
+             <div class="tab-pane active" id="tab1">
+               <div class="control-group">
+                 <label class="control-label">Descrição do Perfil:</label>
+                 <div class="controls">
+                   <input   type="text" class="span10" />
+
+                 </div>
+                 <br>
+                  <div class="controls">
+                  <button   type="submit" class="btn btn-success span10"><i class="icon-ok"></i> Gravar</button>
+                </div>
+               </div>
+              
+
+             
+
+
+             </div>
+           </form>
+
+
+
+
+
+           <table class="table table-striped table-bordered table-advance table-hover">
+             <thead>
+               <tr>
+                 <th>Id</th>
+                 <th><i class="icon-user"></i> Descrição do Perfil</th>
+                 <th></th>
+                
+               </tr>
+             </thead>
+
+             <tr >
+               <td>01</td>
+               <td>Administrador</td>
+               <td>
+            <button  style='float:right;margin-top:-5px;' ng-click="editarperfil()"   type="submit" class="btn btn-primary"><i class="icon-pencil icon-white"></i> Editar</button>
+            <button ng-click="deleteUser(user.Id)" style='float:right;margin-top:-5px;' type="submit" class="btn btn-danger"><i class="icon-remove icon-white"></i> Excluir</button> 
+               </td>
+             </tr>
+
+              <tr >
+               <td>02</td>
+               <td>Gerente</td>
+               <td>
+            <button  style='float:right;margin-top:-5px;' ng-click="editarperfil()"   type="submit" class="btn btn-primary"><i class="icon-pencil icon-white"></i> Editar</button>
+            <button ng-click="deleteUser(user.Id)" style='float:right;margin-top:-5px;' type="submit" class="btn btn-danger"><i class="icon-remove icon-white"></i> Excluir</button> 
+               </td>
+             </tr>
+
+
+              <tr >
+               <td>03</td>
+               <td>Sub-Gerente</td>
+               <td>
+            <button  style='float:right;margin-top:-5px;' ng-click="editarperfil()"  type="submit" class="btn btn-primary"><i class="icon-pencil icon-white"></i> Editar</button>
+            <button ng-click="deleteUser(user.Id)" style='float:right;margin-top:-5px;' type="submit" class="btn btn-danger"><i class="icon-remove icon-white"></i> Excluir</button> 
+               </td>
+             </tr>
+
+               <tr >
+               <td>04</td>
+               <td>Funcionário</td>
+               <td>
+            <button  style='float:right;margin-top:-5px;' ng-click="editarperfil()"   type="submit" class="btn btn-primary"><i class="icon-pencil icon-white"></i> Editar</button>
+            <button ng-click="deleteUser(user.Id)" style='float:right;margin-top:-5px;' type="submit" class="btn btn-danger"><i class="icon-remove icon-white"></i> Excluir</button> 
+               </td>
+             </tr>
+
+
+
+         <!--
+         <tbody>
+         <tr>
+         <td class="highlight">
+         <div class="success"></div>
+         <a href="#">1</a>
+         </td>
+         <td class="hidden-phone"> Campinas:SA</td>
+         
+         <td class="hidden-phone">GRUPO 1</td>
+         
+         <td>
+         <a href="" class="btn mini purple"><i class="icon-edit"></i> Editar</a>
+         <a href="" class="btn mini black"><i class="icon-trash"></i> Deletar</a>
+         
+         
+         </td>
+         </tr>
+         <tr>
+         <td class="highlight">
+         <div class="info"></div>
+         <a href="#">2</a>
+         </td>
+         <td class="hidden-phone">Campinas:NUM1 </td>
+         
+         
+         
+         <td class="hidden-phone"> GRUPO 2</td>
+         
+         
+         <td>
+         <a href="" class="btn mini purple"><i class="icon-edit"></i> Editar</a>
+         <a href="" class="btn mini black"><i class="icon-trash"></i> Deletar</a>
+         
+         
+         </td>
+         </tr>
+         <tr>
+         <td class="highlight">
+         <div class="important"></div>
+         <a href="">3</a>
+         </td>
+         <td class="hidden-phone">Pirassununga: CA</td>
+         
+         
+         <td class="hidden-phone"> GRUPO 3</td>
+         
+         <td>
+         <a href="" class="btn mini purple"><i class="icon-edit"></i> Editar</a>
+         <a href="" class="btn mini black"><i class="icon-trash"></i> Deletar</a>
+         
+         
+         </td>
+         </tr>
+         <tr>
+         <td class="highlight">
+         <div class="warning"></div>
+         <a href="">4</a>
+         </td>
+         <td class="hidden-phone">Rivera - URU1 </td>
+         
+         
+         <td class="hidden-phone"> GRUPO 4</td>
+         
+         
+         <td>
+         <a href="" class="btn mini purple"><i class="icon-edit"></i> Editar</a>
+         <a href="" class="btn mini black"><i class="icon-trash"></i> Deletar</a>
+         
+         
+         </td>
+         </tr>
+         <tr>
+         <td class="highlight">
+         <div class="important"></div>
+         <a href="">5</a>
+         </td>
+         <td class="hidden-phone">São Paulo - SAUDE</td>
+         
+         
+         <td class="hidden-phone"> GRUPO 1</td>
+         
+         <td>
+         <a href="" class="btn mini purple"><i class="icon-edit"></i> Editar</a>
+         <a href="" class="btn mini black"><i class="icon-trash"></i> Deletar</a>
+         
+         
+         </td>
+         </tr>
+         </tbody>
+       -->
+     </table>
+
+
+   </div>
+ </div>
+ <!-- END SAMPLE TABLE widget-->
+        <br>
+       <div class="form-actions">
+       <div style="float:right;">
+       <button ng-click="sairperfil()" type="button" class="btn"><i class=" icon-signout"></i> Sair</button>
+       <div>
+       </div> 
+       </div>
+       </div>
+
+ <!-- END EXAMPLE TABLE widget-->
+</div>
+</div>
+
+<!-- END ADVANCED TABLE widget-->

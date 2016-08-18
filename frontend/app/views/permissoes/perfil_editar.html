@@ -1,0 +1,83 @@
+         
+
+<!-- BEGIN PAGE HEADER-->   
+<div class="row-fluid">
+ <div class="span12">
+   <!-- BEGIN THEME CUSTOMIZER-->
+   <!-- BEGIN PAGE TITLE & BREADCRUMB-->
+   <h3 class="page-title">
+    Perfil
+     <small><!--dados dos usuários--></small>
+   </h3>
+   <ul class="breadcrumb">
+     <li>
+       <a href=""><i class="icon-user"></i></a><span class="divider">&nbsp;</span>
+     </li>
+     <li>
+       <a href="">Perfil</a> <span class="divider">&nbsp;</span>
+     </li>
+     <li><a href="">Editar Perfil</a><span class="divider-last">&nbsp;</span></li>
+   </ul>
+   <!-- END PAGE TITLE & BREADCRUMB-->
+ </div>
+</div>
+<!-- END PAGE HEADER-->
+<!-- BEGIN ADVANCED TABLE widget-->
+<div class="row-fluid">
+ <div class="span6">
+   <!-- BEGIN EXAMPLE TABLE widget-->
+   <!-- BEGIN SAMPLE TABLE widget-->
+   <div class="widget">
+     <div class="widget-title">
+       <h4><i class="icon-pencil icon-white"></i> Editar Perfil</h4>
+    
+
+
+
+     </div>
+     <div class="widget-body">
+
+
+       <form ng-submit="checkLogin()" class="form-horizontal">
+         <div class="form-wizard">
+
+
+           <div class="tab-content">
+             <br>
+             <div class="tab-pane active" id="tab1">
+               <div class="control-group">
+                 <label class="control-label">Descrição do Perfil:</label>
+                 <div class="controls">
+                   <input   type="text" class="span10"  value="Gerente"/>
+
+                 </div>
+                 <br>
+                  <div class="controls">
+                  <button   type="submit" class="btn btn-primary span10"><i class="icon-refresh icon-white"></i>Atualizar</button>
+                </div>
+               </div>
+              
+
+             
+
+
+             </div>
+           </form>
+
+   </div>
+ </div>
+ <!-- END SAMPLE TABLE widget-->
+        <br>
+       <div class="form-actions">
+       <div style="float:right;">
+       <button ng-click="sairperfil()" type="button" class="btn"><i class=" icon-signout"></i> Sair</button>
+       <div>
+       </div> 
+       </div>
+       </div>
+
+ <!-- END EXAMPLE TABLE widget-->
+</div>
+</div>
+
+<!-- END ADVANCED TABLE widget-->

@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{425143D2-6DA5-4EEC-A2EB-A0235765E80B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RemyWebModelo</RootNamespace>
+    <AssemblyName>RemyWebModelo</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FluentNHibernate, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentNHibernate.2.0.1.0\lib\net40\FluentNHibernate.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=4.0.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Iesi.Collections.4.0.0.4000\lib\net40\Iesi.Collections.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NHibernate, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\NHibernate.4.0.3.4000\lib\net40\NHibernate.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connection\ConnectionFactoryManager.cs" />
+    <Compile Include="Connection\ConnectionManager.cs" />
+    <Compile Include="Connection\IConnectionManager.cs" />
+    <Compile Include="Entidades\Acesso.cs" />
+    <Compile Include="Entidades\Cidade.cs" />
+    <Compile Include="Entidades\Funcionario.cs" />
+    <Compile Include="Entidades\Log.cs" />
+    <Compile Include="Entidades\Operador.cs" />
+    <Compile Include="Entidades\Perfil.cs" />
+    <Compile Include="Entidades\Pessoa.cs" />
+    <Compile Include="Entidades\Unidade.cs" />
+    <Compile Include="Entidades\Vendedora.cs" />
+    <Compile Include="Maps\AcessoMap.cs" />
+    <Compile Include="Maps\CidadeMap.cs" />
+    <Compile Include="Maps\FuncionarioMap.cs" />
+    <Compile Include="Maps\LogMap.cs" />
+    <Compile Include="Maps\OperadorMap.cs" />
+    <Compile Include="Maps\PerfilMap.cs" />
+    <Compile Include="Maps\PessoaMap.cs" />
+    <Compile Include="Maps\UnidadeMap.cs" />
+    <Compile Include="Maps\Utils\MapLength.cs" />
+    <Compile Include="Maps\VendedoraMap.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositorio\AcessoRepository.cs" />
+    <Compile Include="Repositorio\CidadeRepository.cs" />
+    <Compile Include="Repositorio\FuncionarioRepository.cs" />
+    <Compile Include="Repositorio\Interfaces\IAcessoRepository.cs" />
+    <Compile Include="Repositorio\Interfaces\ICidadeRepository.cs" />
+    <Compile Include="Repositorio\Interfaces\IFuncionarioRepository.cs" />
+    <Compile Include="Repositorio\Interfaces\ILogRepository.cs" />
+    <Compile Include="Repositorio\Interfaces\IOperadorRepository.cs" />
+    <Compile Include="Repositorio\Interfaces\IPerfilRepository.cs" />
+    <Compile Include="Repositorio\Interfaces\IPessoaRepository.cs" />
+    <Compile Include="Repositorio\Interfaces\IRepository.cs" />
+    <Compile Include="Repositorio\Interfaces\IUnidadeRepository.cs" />
+    <Compile Include="Repositorio\Interfaces\IVendedoraRepository.cs" />
+    <Compile Include="Repositorio\LogRepository.cs" />
+    <Compile Include="Repositorio\OperadorRepository.cs" />
+    <Compile Include="Repositorio\PerfilRepository.cs" />
+    <Compile Include="Repositorio\PessoaRepository.cs" />
+    <Compile Include="Repositorio\Repository.cs" />
+    <Compile Include="Repositorio\UnidadeRepository.cs" />
+    <Compile Include="Repositorio\VendedoraRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

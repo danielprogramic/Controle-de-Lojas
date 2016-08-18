@@ -1,0 +1,219 @@
+
+
+<!-- BEGIN PAGE HEADER-->   
+            <div class="row-fluid">
+               <div class="span12">
+                   <!-- BEGIN THEME CUSTOMIZER-->
+           <!--
+                   <div id="theme-change" class="hidden-phone">
+                       <i class="icon-cogs"></i>
+                        <span class="settings">
+                            <span class="text">Theme:</span>
+                            <span class="colors">
+                                <span class="color-default" data-style="default"></span>
+                                <span class="color-gray" data-style="gray"></span>
+                                <span class="color-purple" data-style="purple"></span>
+                                <span class="color-navy-blue" data-style="navy-blue"></span>
+                            </span>
+                        </span>
+                   </div>
+           -->
+                   <!-- END THEME CUSTOMIZER-->
+                  <!-- BEGIN PAGE TITLE & BREADCRUMB-->
+                   <h3 class="page-title">
+                    Grupo
+                     <small>Dados referente ao grupo de unidades</small>
+                  </h3>
+                   <ul class="breadcrumb">
+                       <li>
+                           <a href=""><i class="icon-sitemap"></i></a><span class="divider">&nbsp;</span>
+                       </li>
+                       <li>
+                           <a href="">Grupo</a> <span class="divider">&nbsp;</span>
+                       </li>
+                       <li><a href="">Lista de Grupos</a><span class="divider-last">&nbsp;</span></li>
+                   </ul>
+                   <!-- END PAGE TITLE & BREADCRUMB-->
+               </div>
+            </div>
+            <!-- END PAGE HEADER-->
+
+
+
+
+
+
+
+
+            <!-- BEGIN ADVANCED TABLE widget-->
+            <div class="row-fluid">
+                <div class="span6">
+
+
+                                        
+
+                                           <div class="widget">
+     
+
+
+
+                                           <div class="widget-title">
+                                           <h4><i class="icon-sitemap"></i>Filtrar Grupos</h4>
+                                           <span class="tools">
+                                           <a href="javascript:;" class="icon-chevron-down"></a>
+                                           <a class="icon-remove" href="javascript:;"></a>
+                                           </span>                    
+                                           </div>
+                                           <div class="widget-body">
+                                             <form ng-submit="checkLogin()" class="form-horizontal">
+                                             <div class="form-wizard">
+                                             
+                                             
+                                             <div class="tab-content">
+                                             <br>
+                                             <div class="tab-pane active" id="tab1">
+                                             <div class="control-group">
+                                             <label class="control-label">Descrição:</label>
+                                             <div class="controls">
+                                             <input   type="text" class="span10" />
+                                             
+                                             </div>
+                                             </div>
+                                             
+                                             <br>
+                                             <div class="form-actions">
+                                             <div style="float:right;">
+                                             
+                                             <button ng-click="incluir_grupo()" class="btn btn-warning"><i class="icon-plus icon-white"></i> Incluir</button>
+                                             <button ng-click="filtrar_grupo_service()" class="btn btn-inverse"><i class="icon-eye-open"></i> Filtrar</button>
+                                             <div>
+                                             </div> 
+                                             </div>
+                                             </div>
+                                             
+                                             
+                                             </div>
+                                             </form>
+
+
+
+
+
+
+                            
+                 <table class="table table-bordered table-hover">
+                 <thead>
+                 <tr>
+                 <th><i class="icon-user"></i>   Descrição dos grupos</th>
+                 </tr>
+                 </thead>
+                 
+
+
+                  <div class="accordion" id="accordion1">
+                 <tr ng-repeat="grupo in grupos">
+                 <td>
+                   
+                                           
+                                           <div class="accordion-group">
+                                           <div class="accordion-heading">
+                                           <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href=".collapse_{{ grupo.Id }}">
+                                           <i class=" icon-plus"></i>
+                                              
+                                              {{ grupo.Descricao }}
+                                              <button  style='float:right;margin-top:-5px;' ng-click="editar_grupo()"  type="submit" class="btn btn-primary"><i class="icon-pencil icon-white"></i> Editar</button>
+                                              <button style='float:right;margin-top:-5px;' ng-click="deletar_grupo()"  type="submit" class="btn btn-danger"><i class="icon-remove icon-white"></i> Deletar</button>
+                                             
+
+                                           </a>
+                                           </div>
+                                           <div  class="accordion-body collapse collapse_{{ grupo.Id }}">
+                                           <div class="accordion-inner">
+                                            {{ grupo.Unidades }}
+                                           </div>
+                                           </div>
+                                           </div>                    
+
+
+                 </td>  
+                 </tr>
+                  </div>
+                 
+                 
+                 </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                             
+                                          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   
+                </div>
+            </div>
+
+            <!-- END ADVANCED TABLE widget-->

@@ -1,0 +1,12 @@
+D:\Sistemas\Remyntima\RemyWeb\RemyWebModelo\bin\Debug\RemyWebModelo.dll
+D:\Sistemas\Remyntima\RemyWeb\RemyWebModelo\bin\Debug\RemyWebModelo.pdb
+D:\Sistemas\Remyntima\RemyWeb\RemyWebModelo\bin\Debug\FluentNHibernate.dll
+D:\Sistemas\Remyntima\RemyWeb\RemyWebModelo\bin\Debug\Iesi.Collections.dll
+D:\Sistemas\Remyntima\RemyWeb\RemyWebModelo\bin\Debug\NHibernate.dll
+D:\Sistemas\Remyntima\RemyWeb\RemyWebModelo\bin\Debug\FluentNHibernate.pdb
+D:\Sistemas\Remyntima\RemyWeb\RemyWebModelo\bin\Debug\FluentNHibernate.xml
+D:\Sistemas\Remyntima\RemyWeb\RemyWebModelo\bin\Debug\Iesi.Collections.xml
+D:\Sistemas\Remyntima\RemyWeb\RemyWebModelo\bin\Debug\NHibernate.xml
+D:\Sistemas\Remyntima\RemyWeb\RemyWebModelo\obj\Debug\RemyWebModelo.csprojResolveAssemblyReference.cache
+D:\Sistemas\Remyntima\RemyWeb\RemyWebModelo\obj\Debug\RemyWebModelo.dll
+D:\Sistemas\Remyntima\RemyWeb\RemyWebModelo\obj\Debug\RemyWebModelo.pdb

@@ -1,0 +1,101 @@
+    
+
+<!-- BEGIN PAGE HEADER-->   
+<div class="row-fluid">
+  <div class="span12">
+    <!-- BEGIN THEME CUSTOMIZER-->
+  <!-- END THEME CUSTOMIZER-->
+  <!-- BEGIN PAGE TITLE & BREADCRUMB-->
+  <h3 class="page-title">
+    Unidade
+    <small><!--dados dos usuários--></small>
+  </h3>
+  <ul class="breadcrumb">
+    <li>
+      <a href=""><i class="icon-hdd"></i></a><span class="divider">&nbsp;</span>
+    </li>
+    <li>
+      <a href="">Unidade</a> <span class="divider">&nbsp;</span>
+    </li>
+    <li><a href="">Incluir Unidade</a><span class="divider-last">&nbsp;</span></li>
+  </ul>
+  <!-- END PAGE TITLE & BREADCRUMB-->
+</div>
+</div>
+<!-- END PAGE HEADER-->
+
+
+
+
+
+
+
+
+<div class="row-fluid">
+  <div class="span10">
+    <div class="widget box blue" id="form_wizard_1">
+      <div class="widget-title">
+        <h4>
+          <i class="icon-plus icon-white"></i> Incluir Unidade
+        </h4>
+       
+      </div>
+      <div class="widget-body form">
+        <form ng-submit="checkLogin()" class="form-horizontal">
+          <div class="form-wizard">
+
+
+            <div class="tab-content">
+              <br>
+              <div class="tab-pane active" id="tab1">
+                <div class="control-group">
+                  <label class="control-label">Descrição:</label>
+                  <div class="controls">
+                    <input   type="text" class="span5" />
+
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label">Grupo:</label>
+                  <!-- <label class="control-label">Passing options in as a hash: {{ woo }}</label> -->
+                  <div class="controls">
+                    <select style="width:280px;"
+                    ng-model="woo"
+                    chosen="directiveOptions"
+                    ng-options="value.Descricao for value in optionsFromQuery" >
+                    <option value=""></option>
+                  </select>
+                </div>
+              </div>
+               <br>
+            
+
+
+
+              <br>
+              <div class="form-actions">
+                <div style="float:right;">
+                  <button ng-click="editar_uni_service()"  type="submit" class="btn btn-success"><i class="icon-ok"></i> Gravar</button>
+                
+                  <button ng-click="filtrar_uni()" type="button" class="btn"><i class=" icon-signout"></i>Sair</button>
+                  <div>
+                  </div> 
+                </div>
+
+
+
+              </div>
+
+
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+
+
+
+

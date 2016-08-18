@@ -1,0 +1,91 @@
+    
+
+<!-- BEGIN PAGE HEADER-->   
+<div class="row-fluid">
+  <div class="span12">
+    <!-- BEGIN THEME CUSTOMIZER-->
+  <!-- END THEME CUSTOMIZER-->
+  <!-- BEGIN PAGE TITLE & BREADCRUMB-->
+  <h3 class="page-title">
+    Grupo
+    <small><!--dados dos usuários--></small>
+  </h3>
+  <ul class="breadcrumb">
+    <li>
+      <a href=""><i class="icon-hdd"></i></a><span class="divider">&nbsp;</span>
+    </li>
+    <li>
+      <a href="">Grupo</a> <span class="divider">&nbsp;</span>
+    </li>
+    <li><a href="">Incluir Grupos</a><span class="divider-last">&nbsp;</span></li>
+  </ul>
+  <!-- END PAGE TITLE & BREADCRUMB-->
+</div>
+</div>
+<!-- END PAGE HEADER-->
+
+
+
+
+
+
+
+
+<div class="row-fluid">
+  <div class="span6">
+    <div class="widget box blue" id="form_wizard_1">
+      <div class="widget-title">
+        <h4>
+          <i class="icon-plus icon-white"></i> Incluir Grupo
+        </h4>
+        <span class="tools">
+          <a href="javascript:;" class="icon-chevron-down"></a>
+          <a href="javascript:;" class="icon-remove"></a>
+        </span>
+      </div>
+      <div class="widget-body form">
+        <form ng-submit="checkLogin()" class="form-horizontal">
+          <div class="form-wizard">
+
+
+            <div class="tab-content">
+              <br>
+              <div class="tab-pane active" id="tab1">
+                <div class="control-group">
+                  <label class="control-label">Descrição:</label>
+                  <div class="controls">
+                    <input   type="text" class="span10" />
+
+                  </div>
+                </div>
+          
+           
+
+              <br>
+              <br>
+              <br>
+              <div class="form-actions">
+                <div style="float:right;">
+                   <button ng-click="incluir_grupo_service()"  type="submit" class="btn btn-success"><i class="icon-ok"></i> Gravar</button>
+                  <button ng-click="filtrar_grupo()" type="button" class="btn"><i class=" icon-signout"></i>Sair</button>
+                  <div>
+                  </div> 
+                </div>
+
+
+
+              </div>
+
+
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+
+
+
+
